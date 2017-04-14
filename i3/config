@@ -154,3 +154,10 @@ bindsym $mod+r mode "resize"
 #}
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+gaps inner 10
+gaps outer 0
+smart_gaps on
+
+for_window [class="^.*"] border pixel 1
+hide_edge_borders both
