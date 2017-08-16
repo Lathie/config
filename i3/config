@@ -119,7 +119,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 #bindsym $mod+Shift+l exec "i3lock -e -f -i ~/.config/i3/backgrounds/thbg.png; systemctl suspend"
 
-bindsym $mod+Shift+l exec "i3lock -e -u -i ~/.config/i3/backgrounds/blue.png; systemctl suspend"
+#bindsym $mod+Shift+l exec "i3lock -e -u -i ~/.config/i3/bg/blue.png; systemctl suspend"
+
+bindsym $mod+Shift+l exec "i3lock -e -u -i ~/.config/i3/bg/blue.png; systemctl suspend"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
