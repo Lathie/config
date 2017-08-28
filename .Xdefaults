@@ -35,9 +35,21 @@
 !------------------------------------------------------------------------------
 ! u r x v t
 
-URxvt*font:            xft:mononoki:size=14
-URxvt*urlLauncher:         chromium  
-URxvt*scrollBar:        false
-URxvt*scrollBar_right:        true
+URxvt*font:               xft:mononoki:size=14
+URxvt*urlLauncher:        chromium
+URxvt*scrollBar:          false
+URxvt*scrollBar_right:    true
 URxvt*scrollColor:        #000000
+URxvt*transparent:        true
+URxvt*shading:            30
 
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #373b41, #373b41, #999999
+rofi.color-normal: #373b41, #cccccc, #373b41, #81a2be, #373b41
+rofi.color-active: #b5bd68, #373b41, #b5bd68, #81a2be, #373b41
+rofi.color-urgent: #cc6666, #373b41, #cc6666, #81a2be, #373b41
+
+rofi.font: mononoki 16
