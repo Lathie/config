@@ -21,7 +21,7 @@
 DATEFMT=%Y%m%d-%H%M
 
 # set backup directory
-BACKUP_DIR=$HOME
+BACKUP_DIR=$HOME/.config/packup
 
 # set default editor
-EDITOR=vi
+EDITOR=vim
