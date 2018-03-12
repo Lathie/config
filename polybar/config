@@ -1,64 +1,56 @@
-[bar/top]
+
+[bar/master]
 monitor = eDP-1
 width = 100%
-height = 54
+height = 70
 bottom = true
 
-background = #00000000
-foreground = #ccffffff
+background = #256b8a
+foreground = #f0f3e2
 
-line-color = ${bar/bottom.background}
+off-white = #f0f3e2
+tree-light-pink = #f7cfda
+tree-dark-pink = #e6adc7
+tree-light-blue = #b3d5f2
+tree-purple = #c9a8c8
+tree-blue = #5191ba
+train-light-green = #d5e5c9
+bird-green = #6dcd96
+
+red = #9BADCD
+green = #D0AFC9
+yellow = #EBB5C7
+blue = #B1D1EF
+magenta = #D2DFDD
+cyan = #F8D2D9
+white = #ede9e6
+black = #a5a3a1
+cursor = #ede9e6
+
+line-color = ${bar/master.background}
 line-size = 2
 
 spacing = 2
 padding-right = 3
+
 module-margin = 3
 
-font-0 = mononoki:size=13;4
+font-0 = mononoki:size=13;3
 font-1 = unifont:size=11;4
 font-2 = FontAwesome:size=13;4
 font-3 = mononoki:size=13;2
 font-4 = MaterialIcons:size=15;4
-font-5 = Termsynu:size=13:antialias=false;4
+font-5 = mononoki:size=13:antialias=false;4
 
 modules-left = i3 cpu memory
 modules-right = backlight bluetooth volume wireless-network wired-network battery date powermenu
 
-[bar/bottom]
-monitor = eDP-1
-bottom = true
-width = 100%
-height = 27
-
-background = ${bar/top.background}
-foreground = ${bar/top.foreground}
-
-line-color = ${bar/top.background}
-line-size = 2
-
-spacing = 3
-padding-right = 4
-module-margin-left = 0
-module-margin-right = 6
-
-font-0 = NotoSans-Regular:size=8;0
-font-1 = unifont:size=6;-3
-font-2 = FontAwesome:size=8;-2
-font-3 = NotoSans-Regular:size=8;-1
-font-4 = MaterialIcons:size=10;-1
-font-5 = Termsynu:size=8:antialias=false;0
-
-modules-left = i3
-modules-right = cpu memory
-
 [module/backlight]
 type = internal/xbacklight
 format = <ramp> <bar>
-
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-
 bar-width = 20
 bar-indicator = |
 bar-indicator-font = 3
@@ -79,9 +71,9 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-full = <ramp-capacity> <label-full>
 
 ramp-capacity-0 = 
-ramp-capacity-0-foreground = #f53c3c
+ramp-capacity-0-foreground = off-white
 ramp-capacity-1 = 
-ramp-capacity-1-foreground = #ffa900
+ramp-capacity-1-foreground = off-white
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
@@ -89,11 +81,11 @@ ramp-capacity-4 = 
 bar-capacity-width = 10
 bar-capacity-format = %{+u}%{+o}%fill%%empty%%{-u}%{-o}
 bar-capacity-fill = █
-bar-capacity-fill-foreground = #ddffffff
+bar-capacity-fill-foreground = off-white
 bar-capacity-fill-font = 3
 bar-capacity-empty = █
 bar-capacity-empty-font = 3
-bar-capacity-empty-foreground = #44ffffff
+bar-capacity-empty-foreground = off-white
 
 animation-charging-0 = 
 animation-charging-1 = 
@@ -122,17 +114,16 @@ ws-icon-default = 
 
 format = <label-state> <label-mode>
 
-
 label-focused = %index%
 label-focused-foreground = #fff
-label-focused-background = #773f3f3f
-label-focused-underline = #55ccff
+label-focused-background = ${bar/master.tree-blue}
+label-focused-underline = ${bar/master.bird-green}
 label-focused-font = 4
 label-focused-padding = 4
 
 label-unfocused = %index%
 label-unfocused-foreground = #dd
-label-unfocused-underline = #666
+label-unfocused-underline = ${bar/master.tree-dark-pink}
 label-unfocused-font = 4
 label-unfocused-padding = 4
 
@@ -151,28 +142,28 @@ label = CPU
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 2
-ramp-coreload-0-foreground = #55ccff
+ramp-coreload-0-foreground = ${bar/master.bird-green}
 ramp-coreload-1 = ▂
 ramp-coreload-1-font = 2
-ramp-coreload-1-foreground = #55ccff
+ramp-coreload-1-foreground = ${bar/master.bird-green}
 ramp-coreload-2 = ▃
 ramp-coreload-2-font = 2
-ramp-coreload-2-foreground = #55ccff
+ramp-coreload-2-foreground = ${bar/master.bird-green}
 ramp-coreload-3 = ▄
 ramp-coreload-3-font = 2
-ramp-coreload-3-foreground = #55ccff
+ramp-coreload-3-foreground = ${bar/master.bird-green}
 ramp-coreload-4 = ▅
 ramp-coreload-4-font = 2
-ramp-coreload-4-foreground = #fba922
+ramp-coreload-4-foreground = ${bar/master.tree-dark-pink}
 ramp-coreload-5 = ▆
 ramp-coreload-5-font = 2
-ramp-coreload-5-foreground = #fba922
+ramp-coreload-5-foreground = ${bar/master.tree-dark-pink}
 ramp-coreload-6 = ▇
 ramp-coreload-6-font = 2
-ramp-coreload-6-foreground = #ff5555
+ramp-coreload-6-foreground = ${bar/master.tree-purple}
 ramp-coreload-7 = █
 ramp-coreload-7-font = 2
-ramp-coreload-7-foreground = #ff5555
+ramp-coreload-7-foreground = ${bar/master.tree-purple}
 
 [module/date]
 type = internal/date
@@ -185,11 +176,11 @@ type = internal/memory
 format = <label> <bar-used>
 label = RAM
 
-bar-used-width = 30
-bar-used-foreground-0 = #55ccff
-bar-used-foreground-1 = #55ccff
-bar-used-foreground-2 = #fba922
-bar-used-foreground-3 = #ff5555
+bar-used-width = 60
+bar-used-foreground-0 = ${bar/master.bird-green}
+bar-used-foreground-1 = ${bar/master.bird-green}
+bar-used-foreground-2 = ${bar/master.tree-dark-pink}
+bar-used-foreground-3 = ${bar/master.tree-purple}
 bar-used-indicator = |
 bar-used-indicator-font = 6
 bar-used-indicator-foreground = #ff
@@ -202,7 +193,6 @@ bar-used-empty-foreground = #444444
 [module/mpd]
 type = internal/mpd
 format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
-
 icon-play = 
 icon-pause = 
 icon-stop = 
@@ -246,7 +236,7 @@ ramp-signal-4 = 
 animation-packetloss-0 = 
 animation-packetloss-0-foreground = #ffa64c
 animation-packetloss-1 = 
-animation-packetloss-1-foreground = ${bar/top.foreground}
+animation-packetloss-1-foreground = ${bar/master.foreground}
 animation-packetloss-framerate = 500
 
 [module/wired-network]
