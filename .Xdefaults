@@ -1,41 +1,74 @@
 
 
+! !------------------------------------------------------------------------------
+! ! c o l o r -  s e t t i n g s - O L D
+
+! *background: #2d2d2d
+! *foreground: #cccccc
+
+! ! Default
+! ! 0: black
+! *color0:  #000000
+! *color8:  #666666
+! ! 1: red
+! *color1:  #f2777a
+! *color9:  #ff3334
+! ! 2: green
+! *color2:  #99cc99
+! *color10: #9ec400
+! ! 3: yellow
+! *color3:  #f99157
+! *color11: #ffcc66
+! ! 4: blue
+! *color4:  #6699cc
+! *color12: #6699cc
+! ! 5: magenta
+! *color5:  #cc99cc
+! *color13: #b777e0
+! ! 6: cyan
+! *color6:  #66cccc
+! *color14: #54ced6
+! ! 7: white
+! *color7:  #515151
+! *color15: #393939
+
+
 !------------------------------------------------------------------------------
 ! c o l o r -  s e t t i n g s
 
-*background: #2d2d2d
-*foreground: #cccccc
+*background: #256b8a
+*foreground: #f0f3e2
 
 ! Default
 ! 0: black
-*color0:  #000000
-*color8:  #666666
+*color0:  #888888
+*color8:  #999999
 ! 1: red
-*color1:  #f2777a
-*color9:  #ff3334
+*color1:  #f7cfda
+*color9:  #e6adc7
 ! 2: green
-*color2:  #99cc99
-*color10: #9ec400
+*color2:  #d5e5c9
+*color10: #6dcd96
 ! 3: yellow
 *color3:  #f99157
 *color11: #ffcc66
 ! 4: blue
-*color4:  #6699cc
-*color12: #6699cc
+*color4:  #5290bb
+*color12: #b3d5f2
 ! 5: magenta
 *color5:  #cc99cc
 *color13: #b777e0
 ! 6: cyan
-*color6:  #66cccc
-*color14: #54ced6
+*color6:  #b3d5f2
+*color14: #b3d5f2
 ! 7: white
-*color7:  #515151
-*color15: #393939
+*color7:  #f0f3e2
+*color15: #f0f3e2
 
 !------------------------------------------------------------------------------
 ! u r x v t
 
-URxvt*font:               xft:mononoki:size=14
+URxvt*font:               xft:mononoki:size=20
 URxvt*urlLauncher:        chromium
 URxvt*scrollBar:          false
 URxvt*scrollBar_right:    true
@@ -43,8 +76,12 @@ URxvt*scrollColor:        #000000
 URxvt*transparent:        true
 URxvt*shading:            30
 
+!---------------------------------------------------------------------
+! xft
+
+
 ! ------------------------------------------------------------------------------
-! ROFI Color theme
+! ROFI Color theme - TDO FUCCCKK
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
 rofi.color-window: #373b41, #373b41, #999999
