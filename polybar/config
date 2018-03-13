@@ -2,7 +2,7 @@
 [bar/master]
 monitor = eDP-1
 width = 100%
-height = 70
+height = 55
 bottom = true
 
 background = #256b8a

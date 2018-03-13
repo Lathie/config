@@ -36,7 +36,8 @@
 !------------------------------------------------------------------------------
 ! c o l o r -  s e t t i n g s
 
-*background: #256b8a
+!*background: #256b8a
+*background: #000000
 *foreground: #f0f3e2
 
 ! Default
@@ -50,10 +51,10 @@
 *color2:  #d5e5c9
 *color10: #6dcd96
 ! 3: yellow
-*color3:  #f99157
-*color11: #ffcc66
+*color3:  #ffdfba
+*color11: #ffffba
 ! 4: blue
-*color4:  #5290bb
+*color4:  #5191ba
 *color12: #b3d5f2
 ! 5: magenta
 *color5:  #cc99cc
