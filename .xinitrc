@@ -1,6 +1,7 @@
 
 
 xmodmap .Xmodmap
-./.fehbg &
+#./.fehbg &
+./.mpvbg_launch.sh &
 
 exec i3
