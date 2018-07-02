@@ -79,12 +79,14 @@ m4
 make
 man-db
 man-pages
+man2html
 mathjax
 mdadm
 mpv
 nano
 neofetch
 netctl
+nmap
 ntp
 openjdk8-doc
 openssh
@@ -97,6 +99,7 @@ patch
 pavucontrol
 pciutils
 pcmciautils
+peek
 perl
 pinta
 pkg-config
@@ -154,6 +157,7 @@ util-linux
 valgrind
 vi
 vim
+virtualbox
 weechat
 wget
 which
