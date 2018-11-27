@@ -144,7 +144,7 @@ tlp
 traceroute
 tree
 ttf-droid
-ttf-font-awesome
+ttf-font-awesome-4
 ttf-freefont
 ttf-liberation
 ttf-material-icons
