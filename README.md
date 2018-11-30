@@ -8,4 +8,7 @@ Neofetch:
 
 <img width="500" alt="portfolio_view" src="https://github.com/Lathie/config/blob/master/neofetch.png">
 
-Emacs config can be found in my emacs.d repo :) 
+Emacs config can be found in my emacs.d repo :)
+
+# Utils
+pacman -Qq | grep -vx "$( pacman -Qmq )"

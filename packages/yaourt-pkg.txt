@@ -1,0 +1,13 @@
+bdf-tewi-git
+otf-font-awesome-4
+package-query
+polybar
+shantz-xwinwrap-bzr
+spotify
+teiler-git
+ttf-font-awesome-4
+ttf-material-icons
+ttf-mononoki
+ttf-symbola
+xininfo-git
+yaourt
