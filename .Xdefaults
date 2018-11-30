@@ -69,7 +69,7 @@
 !------------------------------------------------------------------------------
 ! u r x v t
 
-URxvt*font:               xft:mononoki:size=20
+URxvt*font:               xft:mononoki:size=13
 URxvt*urlLauncher:        chromium
 URxvt*scrollBar:          false
 URxvt*scrollBar_right:    true

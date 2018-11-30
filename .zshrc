@@ -83,3 +83,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ed="emacsclient -nw -c"
+alias emacsd="emacs --daemon"
+
+#if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
+tmux attach-session -t tree || echo "test" && tmux new-session -s tree
+#fi

@@ -117,11 +117,13 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym $mod+m exec ".//home/lathie/.config/i3/monitor.sh"
 #bindsym $mod+Shift+l exec "i3lock -e -f -i ~/.config/i3/backgrounds/thbg.png; systemctl suspend"
 
 #bindsym $mod+Shift+l exec "i3lock -e -u -i ~/.config/i3/bg/blue.png; systemctl suspend"
 
 bindsym $mod+Shift+l exec "i3lock -e -u -i ~/.config/i3/bg/blue.png; systemctl suspend"
+bindsym $mod+l exec "i3lock -e -u -i ~/.config/i3/bg/blue.png"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -153,7 +155,7 @@ mode "resize" {
 bindsym $mod+r  exec rofi -show run    -fg "#f1f1f1" -bg "#333333" -hlfg "#ffffff" -hlbg "#336699" -o 85
 bindsym $mod+d exec rofi -show drun   -fg "#f1f1f1" -bg "#333333" -hlfg "#ffffff" -hlbg "#336699" -o 85
 bindsym $mod+Tab exec rofi -show window -fg "#f1f1f1" -bg "#333333" -hlfg "#ffffff" -hlbg "#336699" -o 85
-bindsym $mod+l exec teiler
+bindsym $mod+k exec teiler
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
