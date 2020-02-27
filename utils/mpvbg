@@ -12,7 +12,7 @@ pkill -9 xwinwrap
 #xwin="xwinwrap -ni -fdt -sh rectangle -un -b -nf -ov -fs -- "
 xwin="xwinwrap -ov -ni -fs -nf -b -- "
 
-mpv="mpv --wid WID --no-config --keepaspect=no --loop \
+mpv="mpv -wid WID --no-config --keepaspect=no --loop \
     --no-border --vd-lavc-fast --x11-bypass-compositor=no \
     --gapless-audio=yes --vo=xv --hwdec=auto --really-quiet \
     --name=mpvbg"
